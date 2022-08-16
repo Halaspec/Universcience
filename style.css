@@ -10,33 +10,62 @@ body{
     height: 100vh;
     background-color: aliceblue;
     overflow: hidden;
+    background: url('src/étincelles-palais-découverte-paris-zigzag.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+
+.main-page{
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
 }
 
 .main {
     display: flex;
     margin: 80px auto;
     width:  800px;
-    height: 500px;
+    height: 600px;
 }
 
 .main div {
     width: 30%;
     margin: 0px 10px;
     transition: width 300ms ease;
+    border: 2px solid white;
 }
 
 .main :nth-child(1){
     background-color: aqua;
+    overflow: hidden;
+}
+.main :nth-child(1):hover{
+    border-color:aqua;
 }
 .main :nth-child(2){
     background-color: red;
+    overflow: hidden;
+
+}
+.main :nth-child(2):hover{
+    border-color:red;
 }
 .main :nth-child(3){
     background-color: yellow;
+    overflow: hidden;
+
+}
+.main :nth-child(3):hover{
+    border-color:yellow;
 }
 .main :nth-child(4){
     background-color: blue;
+    overflow: hidden;
+
+}
+.main :nth-child(4):hover{
+    border-color:blue;
 }
 
 .main div:hover{
@@ -44,7 +73,7 @@ body{
 }
 
 .content .title .logo img{
-    transform: translateY(-120px);
+    transform: translateY(-150px) translateX(-120px);
     width: fit-content;
 }
 
@@ -53,15 +82,10 @@ body{
     width: fit-content;
 }
 
-
-.content .title .footer-contact{
-    transform: translateY(-100px);
-
-}
-
 .content .title .footer-contact a{
     text-decoration: none;
     color: black;
     font-size: 1.5em;
 
 }
+
